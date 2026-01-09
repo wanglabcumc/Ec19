@@ -137,12 +137,12 @@ This runs a configuration check and validates input/output paths without perform
 
 **Generate and rank designs using ProteinMPNN across multiple GPUs:**
 ```bash
-python design_and_rank.py <genes.fasta> --method mpnn --gpus 4 --data_dir /path/to/data
+python design_and_rank.py data/ecoli_ribosomal_genes.fasta --method mpnn --gpus 4 --data_dir /path/to/data
 ```
 
 **To use AFDesign + MPNN:**
 ```bash
-python design_and_rank.py <genes.fasta> --method afdesign_mpnn_bias --gpus 4 --data_dir /path/to/data
+python design_and_rank.py data/ecoli_ribosomal_genes.fasta --method afdesign_mpnn_bias --gpus 4 --data_dir /path/to/data
 ```
 
 #### Key Parameters for `design_and_rank.py`
