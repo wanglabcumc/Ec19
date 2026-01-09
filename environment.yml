@@ -1,0 +1,36 @@
+name: ec19_env
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  # Core
+  - python=3.10
+
+  # Numeric stack
+  - numpy=1.25.*
+  - pandas>=2.0,<2.3
+  - scipy>=1.11,<1.15
+  - joblib>=1.4,<1.5
+  - pyyaml>=6.0
+
+  # Plotting
+  - matplotlib>=3.8,<3.10
+
+  # ML frameworks
+  - pytorch=2.0.1
+  - pytorch-cuda=11.8
+  - jax=0.4.35
+  - jaxlib=0.4.35
+  - cuda-nvcc
+
+  # Bio / structure
+  - biopython=1.84
+  - atomium=1.0.11
+  - gemmi=0.6.7
+
+  # Pip-only packages
+  - pip
+  - pip:
+      - fair-esm==2.0.0
+      - git+https://github.com/sokrypton/ColabDesign.git
